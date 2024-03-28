@@ -6,8 +6,8 @@ wget -qO model.gguf \
 
 docker build \
 --build-arg IMAGE=${IMAGE} \
--t ghcr.io/open-flux-ai/flux-7b:${VERSION} .
+-t ghcr.io/kingdonb/flux-7b:${VERSION} .
 
-docker push ghcr.io/open-flux-ai/flux-7b:${VERSION}
+docker push ghcr.io/kingdonb/flux-7b:${VERSION}
 
 rm model.gguf || true

@@ -7,8 +7,8 @@ wget -qO model.gguf \
 # Build CPU (avx2)
 docker build \
 --build-arg IMAGE=${IMAGE}-avx2 \
--t ghcr.io/open-flux-ai/flux-func-13b:${VERSION} .
+-t ghcr.io/kingdonb/flux-func-13b:${VERSION} .
 
-docker push ghcr.io/open-flux-ai/flux-func-13b:${VERSION}
+docker push ghcr.io/kingdonb/flux-func-13b:${VERSION}
 
 rm model.gguf || true

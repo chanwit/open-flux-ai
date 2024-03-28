@@ -8,8 +8,8 @@ wget -qO model.gguf \
 docker build \
 -f Dockerfile.gpu \
 --build-arg IMAGE=${IMAGE}-gpu \
--t ghcr.io/open-flux-ai/flux-code-7b:${VERSION}-gpu .
+-t ghcr.io/kingdonb/flux-code-7b:${VERSION}-gpu .
 
-docker push ghcr.io/open-flux-ai/flux-code-7b:${VERSION}-gpu
+docker push ghcr.io/kingdonb/flux-code-7b:${VERSION}-gpu
 
 rm model.gguf || true
